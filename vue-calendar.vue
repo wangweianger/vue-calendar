@@ -1,4 +1,4 @@
-<style>
+<style scoped lang="sass">
 	.calendar{
 		box-sizing: border-box;
 		width:280px;
@@ -8,23 +8,22 @@
 		background:#fff;
 		cursor:pointer;
 		padding-left:10px;
-	}
+	};
 </style>
-
 <template>
 	<div>
 		<div :style="option.style" class="calendar" :id="id"></div>
 	</div>
 </template>
-
 <script>
 	import zaneDate from 'zane-calendar'
 	module.exports={
 		props:{
 			option:{
 				type:Object,
-				twoWay: true,
-				default:{}
+				default(){
+					return {}
+				}
 			}
 		},
 		data(){
@@ -48,18 +47,21 @@
 					mounted:()=>{}, 
 					change:(time)=>{}, 
 					done:(time)=>{
-						this.option.value = time;
+						let option = this.extend({value:time},this.option)
+						this.$emit('update:option', option);
 					},
 				},
 				id:'zane-calendar',
 			}
 		},
-		beforeCompile(){
+		created(){
 			this.json 	= this.extend(this.option,this.json);
 			this.id 	= this.json.elem.substring(1);
 		},
-		ready(){
-			zaneDate(this.json)
+		mounted(){
+			this.$nextTick(()=>{
+				zaneDate(this.json)
+			});
 		},
 		methods:{
 			extend(obj1,obj2){

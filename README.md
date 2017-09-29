@@ -2,9 +2,9 @@
 
 ### Case pictures
 
-![输入图片说明](https://git.oschina.net/uploads/images/2017/0928/191145_4f35ff6f_818875.png "在这里输入图片标题")
-![输入图片说明](https://git.oschina.net/uploads/images/2017/0928/191151_d6be7bfa_818875.png "在这里输入图片标题")
-![输入图片说明](https://git.oschina.net/uploads/images/2017/0928/191154_457aa1d6_818875.png "在这里输入图片标题")
+![输入图片说明](https://git.oschina.net/uploads/images/2017/0929/170241_8561545c_818875.png "在这里输入图片标题")
+![输入图片说明](https://git.oschina.net/uploads/images/2017/0929/170243_068b0494_818875.png "在这里输入图片标题")
+![输入图片说明](https://git.oschina.net/uploads/images/2017/0929/170246_ee897477_818875.png "在这里输入图片标题")
 
 ### Requirements
 >  * Vue.js 1.1.0 ~   适用于vue1.0版本 
