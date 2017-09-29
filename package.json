@@ -3,14 +3,17 @@
   "version": "1.0.0",
   "description": "vue2 时间日期选择组件 小巧，全面",
   "homepage": "http://blog.seosiwei.com/detail/8",
-  "repository": "wangweianger/zane-data-time-calendar",
-  "author": "",
+  "repository": "wangweianger/vue-calendar",
+  "author": "zane <752636052@qq.com> (http://blog.seosiwei.com/)",
   "main": "vue-calendar.vue",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "keywords": [
+    "zane",
+    "date",
+    "zane-calendar"
+  ],
   "license": "ISC",
   "devDependencies": {
     "zane-calendar": "^1.3.0"
   }
 }
+

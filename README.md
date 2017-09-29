@@ -40,33 +40,30 @@ export default {
     data(){
         return {
         	option{
-        		elem:'#zane-calendar',   	控件的dom原生 注意：仅限制于id选择器
-				type:'day',   				可选类型 day year month time doubleday doubleyear doublemonth doubletime
-				lang:'cn',   				可选择语言类型 cn , en 
-				width:280,  				插件宽度配置   250 <= X <= 500
-				height:300, 				插件高度配置   250 <= X <= 350
-				behindTop:10,   			插件于输入框的高度 
-				format:'yyyy-MM-dd HH:mm:ss',  时间格式化
-				value:'',  					插件初始默认值
-				min:'',  					可选取时间最小范围 1900-10-01
-				max: '',  					可选取时间最大范围 2099-12-31
-				position:'fixed',  			定位方式  暂时只支持 fixed
-				event:'click',   			事件方式 暂时只支持 click 
-				zindex:100,   				z-index值
-				showtime:true,  			是否显示选择时间
-				showclean:true,  			是否显示清除按钮
-				shownow:true,  				是否显示当前按钮
-				showsubmit:true, 			是否显示提交按钮
-				haveBotBtns:true, 			是否有底部按钮列表
-				calendarName:'', 			此参数勿动 表示当前时间插件实例化对象
-				mounted:()=>{}, 			插件加载完成之后调用
-				change:()=>{}, 				时间变更之后调用
-				done:()=>{}, 				选择完成之后调用
+        		elem:'#zane-calendar',   	控件的dom原生 注意：仅限制于id选择器     (必填)
+				type:'day',   				可选类型 day year month time doubleday doubleyear doublemonth doubletime (必填)
+				lang:'cn',   				可选择语言类型 cn , en  (可选)
+				width:280,  				插件宽度配置   250 <= X <= 500 (可选)
+				height:300, 				插件高度配置   250 <= X <= 350 (可选)
+				behindTop:10,   			插件于输入框的高度  	(可选)
+				format:'yyyy-MM-dd HH:mm:ss',  时间格式化 		(可选)
+				value:'',  					插件初始默认值  		(参数名必须，双向绑定value值)
+				min:'',  					可选取时间最小范围 1900-10-01 (可选)
+				max: '',  					可选取时间最大范围 	2099-12-31 (可选)
+				zindex:100,   				z-index值 (可选)
+				showtime:true,  			是否显示选择时间 (可选)
+				showclean:true,  			是否显示清除按钮 (可选)
+				shownow:true,  				是否显示当前按钮 (可选)
+				showsubmit:true, 			是否显示提交按钮 (可选)
+				haveBotBtns:true, 			是否有底部按钮列表 (可选)
+				calendarName:'', 			此参数勿动 表示当前时间插件实例化对象 (可选)
+				mounted:()=>{}, 			插件加载完成之后调用 (可选)
+				change:()=>{}, 				时间变更之后调用 (可选)
+				done:()=>{}, 				选择完成之后调用 (可选)
         	}
         }
     }    
 }
-
 
 
 ### License
