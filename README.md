@@ -7,8 +7,8 @@
 ![输入图片说明](https://git.oschina.net/uploads/images/2017/0928/191154_457aa1d6_818875.png "在这里输入图片标题")
 
 ### Requirements
->  * Vue.js 1.0.0 ~   
->  * Vue.js 2.3.0 ~
+>  * Vue.js 1.0.0 ~   适用于vue1.0版本 
+>  * Vue.js 2.3.0 ~   2.0vue版本需要大于2.3.0版本
 
 
 ### Demo
