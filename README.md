@@ -29,13 +29,14 @@ $ npm install vue-calendar
 
 ```
 
-<vue-calendar style="margin-top:50px;" :option.sync="option"></vue-calendar>
+<vue-date-calendar style="margin-top:50px;" :option.sync="option"></vue-date-calendar>
 
 
-import vueCalendar from 'vue-calendar'
+import vueDateCalendar from 'vue-date-calendar'
+
 export default {
 	components: {
-       vueCalendar
+       vueDateCalendar
     },
     data(){
         return {
